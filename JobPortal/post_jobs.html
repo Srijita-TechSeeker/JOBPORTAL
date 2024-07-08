@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post New Job</title>
+</head>
+<body>
+    <h1>Post a New Job</h1>
+    <form action="post_jobs.php" method="POST"  enctype="multipart/form-data">
+        <label for="job_title">Job Title:</label>
+        <input type="text" id="job_title" name="job_title" required><br><br>
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required><br><br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required></textarea><br><br>
+        <label for="company_logo">Company Logo:</label>
+        <input type="file" id="company_logo" name="company_logo" accept="image/*" required><br><br>
+        <button type="submit">Post Job</button>
+
+        <p>do you want to back? <a href="home.html">Go to back</a></p>
+        <p>    OR    </p>
+        <p>do you want to view all posted jobs? <a href="all_jobs.php">View Posted Jobs</a></p>
+    </form>
+</body>
+</html>
